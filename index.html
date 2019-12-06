@@ -10,6 +10,10 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+  <!--Google Fonts - Lato and Roboto Slab-->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -38,19 +42,25 @@
     <section class="main-section" id="Introduction">
       <header>Introduction</header>
       <article>
-        <p>Lorem ipsum</p>
+        <p>
+          There are tons of options for utilizing various fonts on your website. One of the
+          simpletst methods to utilize non-default fonts is to use
+          <a href="https://fonts.google.com" target="_blank">Google Fonts</a>, a font library
+          populated with nearly one thousand fonts to choose from. This guide will walk you 
+          through selecting, embedding, and styling Google Fonts for your website.
+        </p>
       </article>
     </section>
 
     <section class="main-section" id="Prior_Knowledge">
       <header>Prior Knowledge</header>
       <article>
-          <p>Lorem ipsum</p>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+          <p>This guide assumes you already have the following skills:</p>
+          <ul id="prior-knowledge-list" class="list-styles">
+            <li>Basic computer usage skills</li>
+            <li>A general understanding of the Internet</li>
+            <li>A solid working knowledge of HyperText Markup Language (HTML)</li>
+            <li>A basic foundational knowledge of Cascading Style Sheets (CSS)</li>
           </ul>
         </article>
     </section>
@@ -58,24 +68,86 @@
     <section class="main-section" id="Searching_Google_Fonts">
       <header>Searching Google Fonts</header>
       <article>
-        <p>Lorem ipsum</p>
-        <img src="img/placeholder.jpeg" alt=""/>
+        <p>
+          Google Fonts offers an intuitive search that can be filtered in helpful ways.
+          If you know the name of the font you are searching for, simply enter it in the
+          search field.    
+        </p>
+        <figure class="font-search">
+          <img src="img/google-fonts-search.jpg" alt="Google Fonts Search"/>
+          <br>
+          <figcaption class="caption">
+            The Google Fonts search page, including a search bar in the top left.
+          </figcaption>
+        </figure>
+        <p>
+          If you do not know the name of the font you want, or if you prefer to browse, Google Fonts
+          offers filters to help you pinpoint the exact style you are looking for. Use the 
+          <span class="filters">Categories</span> filter to choose between serif and sans serif fonts, among
+          other options. Use the <span class="filters">Language</span> filter to choose fonts suited to
+          languages other than the default English. Use the <span class="filters">Font Properties</span>
+          filters to select for other characteristics such as thickness, slant, or width.
+        </p>
+        <figure class="font-search">
+          <img src="img/google-fonts-filters.jpg" alt="Google Fonts Filters"/>
+          <br>
+          <figcaption class="caption">
+            Use the search filters to hone in on the types of fonts you need.
+          </figcaption>
+        </figure>
       </article>
     </section>
 
     <section class="main-section" id="Linking_to_Fonts">
       <header>Linking to Fonts</header>
       <article>
-        <p>Lorem ipsum</p>
-        <code>lorem ipsum codey code</code>
+        <p>
+          After searching Google Fonts and finding the font you would like to use, select it by 
+          clicking the plus sign in the top right corner of the font's box. The font family will
+          be added to a pop up window in the lower right corner. Inside this pop up window you can 
+          view the code used to add the font to your site. Before copying and pasting the code, select
+          the customize tab. From here you can select the options you would like embedded with your font. 
+          You can select from varoius weights (such as bold and light) and styles (such as italic). 
+        </p>
+        <figure id="style-code" class="pop-up-images">
+            <img src="img/google-font-styles.jpg" alt="Google Fonts Style Selector Window"/>
+            <br>
+            <figcaption class="caption">
+              The Google Fonts style selection allows users to select various weights and styles.
+            </figcaption>
+        </figure>
+        <p>
+          Once you have selected all the options you will need, click on the embed tab. You will see two
+          snippets of code. The first code snippet should be copied and pasted into the head section of 
+          your website. This will allow your site to pull the font in for utilization in the browser when
+          people visite your website. The code below shows the font used for the headlines on this page:
+        </p>
+        <code class="html-code">
+          &lt;link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet"&gt;
+        </code>
+        <figure id="embed-code" class="pop-up-images">
+            <img src="img/google-font-code.jpg" alt="Google Fonts Embed Code"/>
+            <figcaption class="caption">
+              Google Fonts provides code for both linking to the font in HTML and selecting 
+              the font in CSS. 
+            </figcaption>
+        </figure>
       </article>
     </section>    
 
     <section class="main-section" id="Selecting_Fonts_with_CSS">
       <header>Selecting Fonts with CSS</header>
       <article>
-        <p>Lorem ipsum</p>
-        <code>lorem ipsum codey code</code>
+        <p>
+          After linking to your chosen fonts, it is time to put them to use. Use CSS to select the elements
+          you wish to apply your fonts to. Once again, this code can be found in the pop up window in Google 
+          Fonts. The CSS code shown below will apply the Lato font to an h1 element:
+        </p>
+        <code class="css-code">
+          h1 {<br>
+              font-family: 'Lato', sans-serif;<br>
+              }
+        </code>
         </article>
     </section>
 
@@ -83,11 +155,75 @@
       <header>Font Size & Font Weight</header>
       <article>
         <h2>Font Size</h2>
-          <p>Lorem ipsum</p>          
-          <code>lorem ipsum codey code</code>
+          <p>
+            Selecting font sizes with CSS uses the <strong>font-size</strong> property. 
+            The actual font size can be denoted in three different ways.</p>
+          <ul id="font-size-list" class="list-styles">      
+            <li>
+              Absolute sizing uses a defined px number to set font-size<br>
+              <code class="css-code">
+                h1 {<br>
+                  font-size:60px<br>
+                }
+              </code>
+            </li>     
+            <li>
+              The <em>em</em> unit sets font size of a child element proportional to the font size
+              of the nearest parent element.
+              <br>
+              <code>
+                h1 {<br>
+                  font-size:3em<br>
+                }
+              </code>
+            </li>
+            <li>
+                The <em>rem</em> unit sets font size of an element proportional to the base font size
+                set at the root of the page (The base font size is set in the HTML selector in CSS using 
+                absolute sizing).
+                <br>
+                <code>
+                  h1 {<br>
+                    font-size:3rem<br>
+                  }
+                </code>
+              </li>
+          </ul>          
         <h2>Font Weight</h2>
-          <p>Lorem ipsum</p>          
-          <code>lorem ipsum codey code</code>
+          <p>
+            Font weight is the thickness of your font. It can range from very light to very bold.
+            Font weight can be set using the CSS property <strong>font-weight</strong>. Font weight
+            can be set using two types of values. The following examples will use the HTML:
+          </p> 
+          <code class="html-code">
+            &lt;h1&gt;Hello world!&lt;/h1&gt;
+          </code> 
+          <ul id="font-weight-list" class="list-styles">
+            <li>
+              Font weight can be set numerically (100 - 900). Higher numbers denote heavier font-weights.
+              <br>
+              <code class="css-code">
+                h1 {<br>
+                  font-weight:300<br>
+                }
+              </code>
+              <code class="result" id="number-weight">
+                <h1>Hello world!</h1>
+              </code>
+            </li>
+            <li>
+                Font weight can be set semantically using terms like <em>light</em>, <em>regular</em>, and <em>bold</em>.
+                <br>
+                <code class="css-code">
+                  h1 {<br>
+                    font-weight:bold<br>
+                  }
+                </code>
+                <code class="result" id="semantic-weight">
+                  <h1>Hello world!</h1>
+                </code>
+              </li>
+          </ul>        
         </article>
     </section>
 
@@ -95,27 +231,156 @@
       <header>Font Style & Font Variant </header>
       <article>
         <h2>Font Style</h2>
-          <p>Lorem ipsum</p>          
-          <code>lorem ipsum codey code</code>
+          <p>
+            The <strong>font-style</strong> property allows you to display selected text in various styles using
+            the values <em>normal</em>, <em>italic</em>, and <em>oblique</em>. The following examples will use the HTML:
+          </p> 
+          <code class="html-code">
+            &lt;h1&gt;Hello world!&lt;/h1&gt;
+          </code>
+          <br>         
+          <code class="css-code">
+            h1 {<br>
+              font-style:italic<br>
+            }
+          </code>
+          <code class="result" id="font-style-result">
+            <h1>Hello world!</h1>
+          </code>
         <h2>Font Variant</h2>
-          <p>Lorem ipsum</p>          
-          <code>lorem ipsum codey code</code>
+          <p>
+            The <strong>font-variant</strong> property allows you display selected text in a variation other than 
+            the default. This typically indicates usage of the <em>small-caps</em> value. The CSS below will apply styles to 
+            the following HTML:
+          </p> 
+          <code class="html-code">
+            &lt;h1&gt;Hello world!&lt;/h1&gt;
+          </code>  
+          <br>                
+          <code class="css-code">
+            h1 {<br>
+              font-variant:small-caps<br>
+            }
+          </code>
+          <code class="result" id="font-variant-result">
+            <h1>Hello world!</h1>
+          </code>
         </article>
     </section>
 
     <section class="main-section" id="Text_Transform">
       <header>Text Transform</header>
       <article>
-          <p>Lorem ipsum</p>
-          <code>lorem ipsum codey code</code>
+          <p>
+            The <strong>text-transform</strong> property transforms selected text based on several values.
+            The following examples will use the HTML:
+          </p>
+          <code class="html-code">
+            &lt;h1&gt;Hello world!&lt;/h1&gt;
+          </code>
+          <ul id="text-transform-list" class="list-styles">
+            <li>
+              <em>none</em>: This is the default value. Text will render exactly as it is entered in HTML.
+              <br>
+              <code class="css-code">
+                h1 {<br>
+                  text-transform:none;<br>
+                }
+              </code>
+              <code class="result" id="tt-none-result">
+               <h1>Hello world!</h1>
+              </code>
+            </li>
+            <li>
+              <em>capitalize</em>: This will transform the text such that the first letter of each word is capitalized.
+              <br>
+              <code class="css-code">
+                  h1 {<br>
+                    text-transform:capitalize;<br>
+                  }
+                </code>
+                <code class="result" id="tt-capitalize-result">
+                  <h1>Hello world!</h1>
+                </code>
+            </li>
+            <li>
+              <em>uppercase</em>: This value will transform all characters into uppercase.
+              <br>  
+              <code class="css-code">
+                h1 {<br>
+                  text-transform:uppercase;<br>
+                }
+              </code>
+              <code class="result" id="tt-uppercase-result">
+                <h1>Hello world!</h1>
+              </code>
+            </li>
+            <li>
+              <em>lowercase</em>: This value will transform all characters into lowercase.
+              <br>
+              <code class="css-code">
+                h1 {<br>
+                  text-transform:lowercase;<br>
+                }
+              </code>
+              <code class="result" id="tt-lowercase-result">
+                <h1>Hello world!</h1>
+              </code>
+            </li>
+          </ul>
         </article>
     </section>
 
     <section class="main-section" id="Color">
       <header>Color</header>
       <article>
-          <p>Lorem ipsum</p>
-          <code>lorem ipsum codey code</code>
+          <p>
+            Changing the color of your text via CSS is simple. Just use the <strong>color</strong>
+            property. The value you can use to change the color, however, can be written in three different
+            ways. The following examples will use the HTML: 
+          </p>  
+          <code class="html-code">&lt;h1&gt;Hello world!&lt;/h1&gt;</code>
+          <ul id="color-list" class="list-styles">
+            <li>
+              <strong>Web Safe Colors</strong>: These semantically named colors use commonly known color names as values, such as 
+              <em>red</em>, <em>teal</em>, or <em>seagreen</em>.
+              <br>
+              <code class="css-code">
+                h1 {<br>
+                  color:crimson;<br>
+                }
+              </code>
+              <code class="result" id="semantic-color">
+                <h1>Hello world!</h1>
+              </code>
+            </li>
+            <li>
+              <strong>HEX Values </strong>: This value uses a pound sign (#) followed by a six-digit 
+              code that represents a specific color.
+              <br>
+              <code class="css-code">
+                h1 {<br>
+                  color:#77c558;<br>
+                }
+              </code>
+              <code class="result" id="hex-color">
+                <h1>Hello world!</h1>
+              </code>
+            </li>
+            <li>
+              <strong>RGB Values</strong>: This value uses a series of three numbers, each representing the 
+              amount of red, green, and blue present in the color. 
+              <br>
+              <code class="css-code">
+                h1 {<br>
+                  color:rgb(18, 36, 213);<br>
+                }
+              </code>
+              <code class="result" id="rgb-color">
+                <h1>Hello world!</h1>
+              </code>
+            </li>
+          </ul>
         </article>
     </section>
 
@@ -123,10 +388,20 @@
       <header>Resources</header>
       <article>
           <p>Lorem ipsum</p>
-          <ul>
-            <li><a href="">Google Fonts</a></li>
-            <li><a href="">Mozilla Developer Network</a></li>
-            <li><a href="">W3</a></li>
+          <ul id="links-list" class="list-styles">
+            <li>
+              <a href="https://fonts.google.com" target="_blank">Google Fonts</a> contains a library of nearly a thousand free to use fonts.
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network (MDN)</a> is an organization
+              providing resources for developers.
+            </li>
+            <li>
+              <a href="https://www.w3.org" target="_blank">World Wide Web Consortium (W3C)</a> is a standard setting group
+              that develops best practices for the Internet.
+            </li>
+            <li>
+              <a href="https://www.w3docs.com/tools/color-picker" target="_blank">W3 Color Picker</a> provides HEX and RGB values for colors.</li>
           </ul>
         </article>
     </section>
