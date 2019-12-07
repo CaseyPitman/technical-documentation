@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
   <!--Google Fonts - Lato and Roboto Slab-->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -160,7 +160,7 @@
             The actual font size can be denoted in three different ways.</p>
           <ul id="font-size-list" class="list-styles">      
             <li>
-              Absolute sizing uses a defined px number to set font-size<br>
+              Absolute sizing uses a defined px number to set font-size.<br>
               <code class="css-code">
                 h1 {<br>
                   font-size:60px<br>
@@ -207,9 +207,9 @@
                   font-weight:300<br>
                 }
               </code>
-              <code class="result" id="number-weight">
+              <div id="number-weight" class="result">
                 <h1>Hello world!</h1>
-              </code>
+              </div>
             </li>
             <li>
                 Font weight can be set semantically using terms like <em>light</em>, <em>regular</em>, and <em>bold</em>.
@@ -219,9 +219,9 @@
                     font-weight:bold<br>
                   }
                 </code>
-                <code class="result" id="semantic-weight">
-                  <h1>Hello world!</h1>
-                </code>
+                <div id="semantic-weight" class="result">
+                    <h1>Hello world!</h1>
+                </div>
               </li>
           </ul>        
         </article>
@@ -244,9 +244,9 @@
               font-style:italic<br>
             }
           </code>
-          <code class="result" id="font-style-result">
+          <div class="result" id="font-style-result">
             <h1>Hello world!</h1>
-          </code>
+          </div>
         <h2>Font Variant</h2>
           <p>
             The <strong>font-variant</strong> property allows you display selected text in a variation other than 
@@ -262,9 +262,9 @@
               font-variant:small-caps<br>
             }
           </code>
-          <code class="result" id="font-variant-result">
+          <div class="result" id="font-variant-result">
             <h1>Hello world!</h1>
-          </code>
+          </div>
         </article>
     </section>
 
@@ -280,52 +280,52 @@
           </code>
           <ul id="text-transform-list" class="list-styles">
             <li>
-              <em>none</em>: This is the default value. Text will render exactly as it is entered in HTML.
+              <em>none</em>&nbsp;: This is the default value. Text will render exactly as it is entered in HTML.
               <br>
               <code class="css-code">
                 h1 {<br>
                   text-transform:none;<br>
                 }
               </code>
-              <code class="result" id="tt-none-result">
+              <div class="result" id="tt-none-result">
                <h1>Hello world!</h1>
-              </code>
+              </div>
             </li>
             <li>
-              <em>capitalize</em>: This will transform the text such that the first letter of each word is capitalized.
+              <em>capitalize</em>&nbsp;: This will transform the text such that the first letter of each word is capitalized.
               <br>
               <code class="css-code">
                   h1 {<br>
                     text-transform:capitalize;<br>
                   }
                 </code>
-                <code class="result" id="tt-capitalize-result">
+                <div class="result" id="tt-capitalize-result">
                   <h1>Hello world!</h1>
-                </code>
+                </div>
             </li>
             <li>
-              <em>uppercase</em>: This value will transform all characters into uppercase.
+              <em>uppercase</em>&nbsp;: This value will transform all characters into uppercase.
               <br>  
               <code class="css-code">
                 h1 {<br>
                   text-transform:uppercase;<br>
                 }
               </code>
-              <code class="result" id="tt-uppercase-result">
+              <div class="result" id="tt-uppercase-result">
                 <h1>Hello world!</h1>
-              </code>
+              </div>
             </li>
             <li>
-              <em>lowercase</em>: This value will transform all characters into lowercase.
+              <em>lowercase</em>&nbsp;: This value will transform all characters into lowercase.
               <br>
               <code class="css-code">
                 h1 {<br>
                   text-transform:lowercase;<br>
                 }
               </code>
-              <code class="result" id="tt-lowercase-result">
+              <div class="result" id="tt-lowercase-result">
                 <h1>Hello world!</h1>
-              </code>
+              </div>
             </li>
           </ul>
         </article>
@@ -342,7 +342,7 @@
           <code class="html-code">&lt;h1&gt;Hello world!&lt;/h1&gt;</code>
           <ul id="color-list" class="list-styles">
             <li>
-              <strong>Web Safe Colors</strong>: These semantically named colors use commonly known color names as values, such as 
+              <strong>Web Safe Colors</strong>&nbsp;: These semantically named colors use commonly known color names as values, such as 
               <em>red</em>, <em>teal</em>, or <em>seagreen</em>.
               <br>
               <code class="css-code">
@@ -350,22 +350,22 @@
                   color:crimson;<br>
                 }
               </code>
-              <code class="result" id="semantic-color">
+              <div class="result" id="semantic-color">
                 <h1>Hello world!</h1>
-              </code>
+              </div>
             </li>
             <li>
-              <strong>HEX Values </strong>: This value uses a pound sign (#) followed by a six-digit 
+              <strong>HEX Values </strong>&nbsp;: This value uses a pound sign (#) followed by a six-digit 
               code that represents a specific color.
               <br>
               <code class="css-code">
                 h1 {<br>
-                  color:#77c558;<br>
+                  color:#435fef;<br>
                 }
               </code>
-              <code class="result" id="hex-color">
+              <div class="result" id="hex-color">
                 <h1>Hello world!</h1>
-              </code>
+              </div>
             </li>
             <li>
               <strong>RGB Values</strong>: This value uses a series of three numbers, each representing the 
@@ -373,12 +373,12 @@
               <br>
               <code class="css-code">
                 h1 {<br>
-                  color:rgb(18, 36, 213);<br>
+                  color:rgb(235, 95, 25);<br>
                 }
               </code>
-              <code class="result" id="rgb-color">
+              <div class="result" id="rgb-color">
                 <h1>Hello world!</h1>
-              </code>
+              </div>
             </li>
           </ul>
         </article>

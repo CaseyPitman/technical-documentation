@@ -98,9 +98,215 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /*========== Global Styles ==========*/
+   html{
+    background:whitesmoke;
+    color:black;
+    min-width:300px;
+    font-size:10px;
+    line-height:1.5rem;
+   }
+   body {
+    font-family: 'Roboto Slab', serif;
+   }
+
+   #main-doc {
+    
+     margin:25px 20px 50px 340px;
+     padding-left:10px;
+     position:absolute;
+   }
+
+   /* Font Sizes & Styles */
+
+  header, 
+  h1, 
+  h2 {
+    font-family: 'Lato', sans-serif;
+  }
+
+   header {
+     font-size:2rem;
+     font-weight:bold;
+   }
+
+   figcaption {
+     font-style:italic;
+     font-size:1.6rem;
+     padding: 10px 0 0 0;
+   }
+
+   h1 {
+     font-size:2rem;
+     margin:0;
+     font-weight:400;
+   }
+
+   h2 {
+     font-size:1.8rem;
+     font-weight:700;
+   }
+
+   ul {
+     line-height:1.5;
+   }
+
+   a {
+     text-decoration: none;
+     color:#be0d09;
+   }
+
+   p  {
+     font-size:1.6rem;
+     line-height:1.5;
+   }
+
+   .main-section ul li {
+     font-size:1.6rem;
+   }
+
+   
+   /*[][][][][] Container Styles [][][][][][*/
+   
+   img {
+     border:1px solid black;
+     width:100%;
+     height:auto;
+   }
+
+   .font-search {
+     max-width:800px;
+   }
+
+   .pop-up-images {
+     max-width:500px;
+   }
+
+   code {
+    display: block;
+    text-align: left;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: lightgray;
+    border:0.5px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size:1.5rem;
+    height:auto;
+   }
+
+   section {
+     margin:40px 0 0;
+     padding:20px 0 0;
+   }
+
+   #Introduction {
+     margin-top:0px;
+   }
+
+
+   /*||||||| Nav Menu |||||||*/
+
+   #navbar {
+     width:300px;
+     position:fixed;
+     top:0;
+     left:0;
+     height:100%;
+     border:1px solid black;
+     margin:20px;
+     display:flex;
+     justify-content:flex-start;
+     align-items:baseline;
+     flex-flow:column;
+   }
+
+   #navbar header {
+     font-size:3rem;
+     line-height:1.5;
+     padding-left:10px;
+     width:290px;
+     border-bottom:1px solid rgba(0,0,0, 0.5);
+   }
+
+   .nav-link {
+     font-size:2rem;
+     width:290px;
+     padding:20px 0 20px 10px;
+     border-bottom:1px solid rgba(0,0,0, 0.5);
+
+   }
+
+
+   /** Main Content Area - Sample Code Results */
+
+   .result {
+    display: block;
+    text-align: left;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: lightgray;
+    border:0.5px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size:1.5rem;
+    height:auto;
+   }
+   
+   #number-weight h1 {
+     font-weight:300;
+   }
+
+   #semantic-weight{
+      font-weight:bold;
+   }
+
+   #font-style-result {
+     font-style:italic;
+   }
+
+   #font-variant-result {
+     font-variant:small-caps;
+   }
+
+   #tt-none-result {
+     text-transform:none;
+   }
+
+   #tt-capitalize-result {
+     text-transform:capitalize;
+   }
+
+   #tt-uppercase-result {
+     text-transform:uppercase;
+   }
+
+   #tt-lowercase-result {
+     text-transform:lowercase;
+   }
+
+   #semantic-color {
+     color:crimson;
+   }
+
+   #hex-color{
+     color:#435fef;
+   }
+
+   #rgb-color {
+      color:rgb(235, 95, 25);   
+    }
 
 
 
+
+   
 
 /* ==========================================================================
    Helper classes
