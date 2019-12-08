@@ -111,7 +111,6 @@ textarea {
    }
 
    #main-doc {
-    
      margin:25px 20px 50px 340px;
      padding-left:10px;
      position:absolute;
@@ -222,6 +221,7 @@ textarea {
      justify-content:flex-start;
      align-items:baseline;
      flex-flow:column;
+     z-index: 1;
    }
 
    #navbar header {
