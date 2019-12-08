@@ -188,7 +188,7 @@ textarea {
     word-break: normal;
     word-wrap: normal;
     line-height: 2;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.5);
     border:0.5px solid black;
     padding: 10px;
     margin: 10px;
@@ -215,12 +215,8 @@ textarea {
      top:0;
      left:0;
      height:100%;
-     border:1px solid black;
+     border-right:1px solid black;
      margin:20px;
-     display:flex;
-     justify-content:flex-start;
-     align-items:baseline;
-     flex-flow:column;
      z-index: 1;
    }
 
@@ -229,16 +225,30 @@ textarea {
      line-height:1.5;
      padding-left:10px;
      width:290px;
-     border-bottom:1px solid rgba(0,0,0, 0.5);
    }
 
-   .nav-link {
+   #navbar ul {
+     overflow-y:auto;
+     overflow-x:none;
+     font-family:'Lato', sans-serif;
      font-size:2rem;
-     width:290px;
-     padding:20px 0 20px 10px;
-     border-bottom:1px solid rgba(0,0,0, 0.5);
-
+     width:100%;
+     height:75%;
+     padding:0;
    }
+
+   #navbar ul li {
+     list-style:none;
+     border-top:1px solid black;
+     position:relative;
+     width:100%;
+     padding:10px;
+   }
+
+
+
+
+
 
 
    /** Main Content Area - Sample Code Results */
@@ -250,7 +260,7 @@ textarea {
     word-break: normal;
     word-wrap: normal;
     line-height: 2;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.5);
     border:0.5px solid black;
     padding: 10px;
     margin: 10px;
