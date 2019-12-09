@@ -158,6 +158,7 @@ textarea {
    p  {
      font-size:1.6rem;
      line-height:1.5;
+     margin:10px 0;
    }
 
    .main-section ul li {
@@ -171,6 +172,10 @@ textarea {
      border:1px solid black;
      width:100%;
      height:auto;
+   }
+
+   figure {
+     margin:20px auto;
    }
 
    .font-search {
@@ -191,7 +196,7 @@ textarea {
     background-color: rgba(211, 211, 211, 0.5);
     border:0.5px solid black;
     padding: 10px;
-    margin: 10px;
+    margin: 20px auto;
     border-radius: 5px;
     font-size:1.5rem;
     height:auto;
@@ -246,11 +251,6 @@ textarea {
    }
 
 
-
-
-
-
-
    /** Main Content Area - Sample Code Results */
 
    .result {
@@ -263,7 +263,7 @@ textarea {
     background-color: rgba(211, 211, 211, 0.5);
     border:0.5px solid black;
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 5px;
     font-size:1.5rem;
     height:auto;
@@ -407,16 +407,92 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /********** Tablet Styles **********/
+
+   @media only screen and (max-width:1200px) {
+
+  #navbar {
+    width:200px;
+  }
+
+  #navbar header {
+    width:190px;
+  }
+
+  #main-doc {
+    margin-left:230px;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/*** Mobile Styles ***/
+
+@media only screen and (max-width:768px) {
+
+/*** Moves Navbar to top in Mobile ******/
+
+html {
+  width:100%;
 }
+
+#navbar ul {
+  height: 50%;
+  position:relative;
+  width:100%;
+  text-align:center;
+  padding: 10px 0;
+  border-bottom:1px solid black;
+
+}
+#navbar header{
+  width:90%;
+  margin:auto;
+
+}
+
+#navbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  max-height: 33%;
+  border: none;
+  z-index: 1;
+  overflow-y:hidden;
+}
+
+
+#main-doc {
+  position: relative;
+  margin-left: 0px;
+  margin-top: 280px;
+  margin:280px auto 50px;
+  width:90%;
+}
+
+code {
+  font-size:1.25rem;
+}
+
+.main-section {
+  scroll-margin-top: 280px;
+}
+
+}
+
+
+
+
+
+
+
+  
+
+
+
+
 
 /* ==========================================================================
    Print styles.
