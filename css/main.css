@@ -1,104 +1,5 @@
-/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-  /*========== Global Styles ==========*/
+  /*Global Styles*/
    html{
     background:whitesmoke;
     color:black;
@@ -166,7 +67,7 @@ textarea {
    }
 
    
-   /*[][][][][] Container Styles [][][][][][*/
+   /*Container Styles*/
    
    img {
      border:1px solid black;
@@ -212,7 +113,7 @@ textarea {
    }
 
 
-   /*||||||| Nav Menu |||||||*/
+   /*Nav Menu*/
 
    #navbar {
      width:300px;
@@ -314,100 +215,7 @@ textarea {
     }
 
 
-
-
-   
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-    /********** Tablet Styles **********/
+    /*Tablet Styles*/
 
    @media only screen and (max-width:1200px) {
 
@@ -422,64 +230,60 @@ textarea {
   #main-doc {
     margin-left:230px;
   }
-
 }
 
-/*** Mobile Styles ***/
+/* Mobile Styles */
 
 @media only screen and (max-width:768px) {
 
-/*** Moves Navbar to top in Mobile ******/
+  /* Moves Navbar to top in Mobile */
 
-html {
-  width:100%;
-}
+  html {
+    width:100%;
+  }
 
-#navbar ul {
-  height: 50%;
-  position:relative;
-  width:100%;
-  text-align:center;
-  padding: 10px 0;
-  border-bottom:1px solid black;
+  #navbar ul {
+    height: 50%;
+    position:relative;
+    width:100%;
+    text-align:center;
+    padding: 10px 0;
+    border-bottom:1px solid black;
+  }
 
-}
-#navbar header{
+  #navbar header{
   width:90%;
   margin:auto;
+  }
 
-}
+  #navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    max-height: 33%;
+    border: none;
+    z-index: 1;
+    overflow-y:hidden;
+  }
 
-#navbar {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  padding: 0;
-  margin: auto;
-  width: 100%;
-  max-height: 33%;
-  border: none;
-  z-index: 1;
-  overflow-y:hidden;
-}
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 280px;
+    margin:280px auto 50px;
+    width:90%;
+  }
 
+  code {
+    font-size:1.25rem;
+  }
 
-#main-doc {
-  position: relative;
-  margin-left: 0px;
-  margin-top: 280px;
-  margin:280px auto 50px;
-  width:90%;
-}
-
-code {
-  font-size:1.25rem;
-}
-
-.main-section {
-  scroll-margin-top: 280px;
-}
-
+  .main-section {
+    scroll-margin-top: 280px;
+  }
 }
 
 

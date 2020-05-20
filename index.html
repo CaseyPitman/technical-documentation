@@ -4,16 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Typography with Google Fonts & CSS</title>
-  <meta name="description" content="">
+  <meta name="description" content="How to: Google Fonts, CSS, and Typography explained.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  
+    <!--Google Fonts - Lato and Roboto Slab-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
-  <!--Google Fonts - Lato and Roboto Slab-->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -36,12 +32,10 @@
       <li><a href="#Text_Transform" class="nav-link">Text Transform</a></li>
       <li><a href="#Color" class="nav-link">Color</a></li>
       <li><a href="#Resources" class="nav-link">Resources</a></li>
-  
     </ul>
   </nav>
 
   <main id="main-doc">
-
     <section class="main-section" id="Introduction">
       <header>Introduction</header>
       <article>
@@ -58,14 +52,14 @@
     <section class="main-section" id="Prior_Knowledge">
       <header>Prior Knowledge</header>
       <article>
-          <p>This guide assumes you already have the following skills:</p>
-          <ul id="prior-knowledge-list" class="list-styles">
-            <li>Basic computer usage skills</li>
-            <li>A general understanding of the Internet</li>
-            <li>A solid working knowledge of HyperText Markup Language (HTML)</li>
-            <li>A basic foundational knowledge of Cascading Style Sheets (CSS)</li>
-          </ul>
-        </article>
+        <p>This guide assumes you already have the following skills:</p>
+        <ul id="prior-knowledge-list" class="list-styles">
+          <li>Basic computer usage skills</li>
+          <li>A general understanding of the Internet</li>
+          <li>A solid working knowledge of HyperText Markup Language (HTML)</li>
+          <li>A basic foundational knowledge of Cascading Style Sheets (CSS)</li>
+        </ul>
+      </article>
     </section>
 
     <section class="main-section" id="Searching_Google_Fonts">
@@ -234,39 +228,39 @@
       <header>Font Style & Font Variant </header>
       <article>
         <h2>Font Style</h2>
-          <p>
-            The <strong>font-style</strong> property allows you to display selected text in various styles using
-            the values <em>normal</em>, <em>italic</em>, and <em>oblique</em>. The following examples will use the HTML:
-          </p> 
-          <code class="html-code">
-            &lt;h1&gt;Hello world!&lt;/h1&gt;
-          </code>         
-          <code class="css-code">
-            h1 {<br>
-              font-style:italic<br>
+        <p>
+          The <strong>font-style</strong> property allows you to display selected text in various styles using
+          the values <em>normal</em>, <em>italic</em>, and <em>oblique</em>. The following examples will use the HTML:
+        </p> 
+        <code class="html-code">
+          &lt;h1&gt;Hello world!&lt;/h1&gt;
+        </code>         
+        <code class="css-code">
+          h1 {<br>
+            font-style:italic<br>
             }
           </code>
-          <div class="result" id="font-style-result">
-            <h1>Hello world!</h1>
-          </div>
+        <div class="result" id="font-style-result">
+          <h1>Hello world!</h1>
+        </div>
         <h2>Font Variant</h2>
-          <p>
-            The <strong>font-variant</strong> property allows you display selected text in a variation other than 
-            the default. This typically indicates usage of the <em>small-caps</em> value. The CSS below will apply styles to 
-            the following HTML:
-          </p> 
-          <code class="html-code">
-            &lt;h1&gt;Hello world!&lt;/h1&gt;
-          </code>  
-          <code class="css-code">
-            h1 {<br>
-              font-variant:small-caps<br>
+         <p>
+          The <strong>font-variant</strong> property allows you display selected text in a variation other than 
+          the default. This typically indicates usage of the <em>small-caps</em> value. The CSS below will apply styles to 
+          the following HTML:
+        </p> 
+        <code class="html-code">
+          &lt;h1&gt;Hello world!&lt;/h1&gt;
+        </code>  
+        <code class="css-code">
+          h1 {<br>
+            font-variant:small-caps<br>
             }
-          </code>
-          <div class="result" id="font-variant-result">
-            <h1>Hello world!</h1>
-          </div>
-        </article>
+         </code>
+        <div class="result" id="font-variant-result">
+          <h1>Hello world!</h1>
+        </div>
+      </article>
     </section>
 
     <section class="main-section" id="Text_Transform">
@@ -329,7 +323,7 @@
               </div>
             </li>
           </ul>
-        </article>
+      </article>
     </section>
 
     <section class="main-section" id="Color">
@@ -382,7 +376,7 @@
               </div>
             </li>
           </ul>
-        </article>
+      </article>
     </section>
 
     <section class="main-section" id="Resources">
@@ -404,9 +398,8 @@
             <li>
               <a href="https://www.w3docs.com/tools/color-picker" target="_blank">W3 Color Picker</a> provides HEX and RGB values for colors.</li>
           </ul>
-        </article>
+      </article>
     </section>
-
   </main>
 
 
@@ -416,12 +409,5 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>
